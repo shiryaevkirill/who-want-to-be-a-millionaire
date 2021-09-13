@@ -1,0 +1,9 @@
+﻿
+<div class="restart_section">
+    @using (Html.BeginForm("Restart", "Game", FormMethod.Post))
+    {
+        <p>Вы проиграли!</p>
+        <button type"submit" class="restart">Restart</button>
+    }
+</div>
+<div id="restartOverlay"></div>

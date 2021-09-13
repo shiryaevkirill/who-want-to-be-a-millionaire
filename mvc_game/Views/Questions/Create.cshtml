@@ -1,0 +1,49 @@
+﻿@model mvc_game.Models.Question
+
+
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+
+@using (Html.BeginForm("Create", "Questions"))
+{
+
+    <h4>Question</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.question, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.question)
+                    @Html.ValidationMessageFor(model => model.question)
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.IdAnswer, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.IdAnswer)
+                    @Html.ValidationMessageFor(model => model.IdAnswer)
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+}
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

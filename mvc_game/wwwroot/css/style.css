@@ -1,0 +1,141 @@
+﻿body {
+    padding-top: 50px;
+}
+
+form{
+    margin: 0;
+}
+
+.grid{
+    width:100%;
+    display:block;
+    float: left;
+}
+
+.row{
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+
+.points-section{
+    width: 250px;
+}
+
+/*.points-section label, .settings-section label{
+    float:left;
+}*/
+
+.points{
+    width: 100%;
+    float:left;
+}
+
+
+.settings-section{
+    float: right;
+    width: 50px;
+}
+
+.settings-section button{
+    margin-bottom: 20px;
+}
+
+.question-section{
+    padding: 150px 100px;
+}
+
+.answers-section ul{
+    list-style-type: none;
+}
+
+.answers-section ul li{
+    width: 100%;
+}
+
+.answers-section ul li button{
+    padding: 15px 0;
+    margin: 2px 0;
+    background-color: black;
+    color: white;
+    width: inherit;
+}
+
+
+#myModal, .restart_section {
+    width: 298px;
+    height: 218px;
+    padding: 18px 9px;
+    border-radius: 4px;
+    background: #fafafa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+    z-index: 38;
+    text-align: center;
+}
+
+#myModal{
+    display: none;
+}
+
+    #myModal #myModal__close {
+        width: 21px;
+        height: 21px;
+        position: absolute;
+        font-size: 29px;
+        top: 1px;
+        right: 11px;
+        cursor: pointer;
+        display: block;
+    }   
+
+#myOverlay, #restartOverlay{
+    z-index: 37;
+    position: fixed;
+    background: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+#restartOverlay {
+    display: block;
+}
+
+#myOverlay{
+    display: none;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+
+.restart_section{
+    display: block;
+    opacity: 1;
+
+}
